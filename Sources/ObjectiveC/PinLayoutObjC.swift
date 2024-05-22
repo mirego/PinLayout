@@ -32,6 +32,7 @@ import AppKit
 @objc public protocol PinLayoutObjC {
     #if os(iOS) || os(tvOS)
     var safeArea: PEdgeInsets { get }
+    var readableMargins: PEdgeInsets { get }
     #endif
     
     typealias POVoid = () -> PinLayoutObjC?

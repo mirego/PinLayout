@@ -58,6 +58,10 @@ import AppKit
     var safeArea: PEdgeInsets {
         return impl?.safeArea ?? .zero
     }
+
+    var readableMargins: PEdgeInsets {
+        return impl?.readableMargins ?? .zero
+    }
     #endif
 
     init(view: PView, keepTransform: Bool) {
